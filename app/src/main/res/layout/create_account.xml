@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1110">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/Appname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FitNexa"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#A8E063"
+        android:letterSpacing="0.03"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Welcome -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#F5F5F5"
+        app:layout_constraintTop_toBottomOf="@id/Appname1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/create1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textSize="16sp"
+        android:textColor="#9A9F9B"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:hint="Email or Username"
+        android:background="@drawable/edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#F5F5F5"
+        android:textColorHint="#777C78"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:drawableTint="#A8E063"
+        android:drawablePadding="12dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/create1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="30dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:hint="Password"
+        android:background="@drawable/edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#F5F5F5"
+        android:textColorHint="#777C78"
+        android:inputType="textPassword"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:drawableTint="#A8E063"
+        android:drawablePadding="12dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Create Account"
+        android:textColor="#10120F"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="#A8E063"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
